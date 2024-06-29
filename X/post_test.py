@@ -7,8 +7,8 @@ from youtube_title import youtube_titles
 from news_title import news_titles
 
 # In your terminal please set your environment variables by running the following lines of code.
-consumer_key = 'Ys5HN79FvWuHW0ppKOWZqUqCI'
-consumer_secret = 'RYaXYcDSuapZZwGKeLu3uZpI0KaMkNMengWZbDpvXVHNktKFoR'
+consumer_key = 'X-consumer_key'
+consumer_secret = 'X-consumer_secret'
 
 # 自行調整發文內容
 
