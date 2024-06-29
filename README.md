@@ -44,23 +44,23 @@
     
 5. 以下分為兩種方法取得 API 驗證碼：
    
-- 手動 : 在終端機中輸入從授權 URL 獲取的 PIN 碼。
+    - 手動 : 在終端機中輸入從授權 URL 獲取的 PIN 碼。
 
-  須把line 49 - 51 的自動方法註解
+      須把line 49 - 51 的自動方法註解
 
-  ```python
-    # from selenium_test import get_PIN
-    # verifier = get_PIN(authorization_url)
-  ```
+      ```python
+        # from selenium_test import get_PIN
+        # verifier = get_PIN(authorization_url)
+      ```
   
-- 自動 : 更改`selenium.py`裡 line 15 及 line 19 的 `YOUR-X-ACCOUNT` `YOUR-X-PASSWORD`，就可以利用 selenium 抓取驗證碼並自動回傳
+    - 自動 : 更改`selenium.py`裡 line 15 及 line 19 的 `YOUR-X-ACCOUNT` `YOUR-X-PASSWORD`，就可以利用 selenium 抓取驗證碼並自動回傳
 
-   須把line 46 - 47 的手動方法註解
+       須把line 46 - 47 的手動方法註解
 
-  ```python
-    #　print("Please go here and authorize: %s" % authorization_url)
-    #　verifier = input("Paste the PIN here: ")
-  ```
+      ```python
+        #　print("Please go here and authorize: %s" % authorization_url)
+        #　verifier = input("Paste the PIN here: ")
+      ```
   
 ## 注意事項
 
