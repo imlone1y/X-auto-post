@@ -9,26 +9,21 @@
 - 抓取聯合新聞網前三個新聞標題並發佈到 Twitter
 
 ## 使用方法
-
-1. 執行程式：
-
-   執行`post_test.py`
-
-3. 安裝所需的 Python 套件：
+1. 安裝所需的 Python 套件：
 
     ```bash
     pip install requests_oauthlib
     pip install selenium
     ```
 
-4. 設定 Twitter API 的 `consumer_key` 和 `consumer_secret`：
+2. 在`post_test.py`設定 Twitter API 的 `consumer_key` 和 `consumer_secret`：
 
     ```python
     consumer_key = 'YourConsumerKey'
     consumer_secret = 'YourConsumerSecret'
     ```
 
-5. 選擇要發佈的內容，取消相應的註釋：
+3. 選擇要發佈的內容，取消相應的註釋：
 
     ```python
     # 生成隨機數字
@@ -41,14 +36,17 @@
     # text = news_titles()
     ```
 
-6. 執行腳本：
+4. 執行腳本：
 
     ```bash
-    python twitter_bot.py
+   post_test.py
     ```
-
-7. 在終端機中輸入從授權 URL 獲取的 PIN 碼。
-
+    
+5. 以下分為兩種方法取得 API 驗證碼：
+   
+- 手動 : 在終端機中輸入從授權 URL 獲取的 PIN 碼。(須把line 49 - 51 的自動方法註解)
+- 自動 : 更改`selenium.py`裡 line 15 及 line 19 的 `YOUR-X-ACCOUNT` `YOUR-X-PASSWORD`，就可以利用 selenium 抓取驗證碼並自動回傳(須把line 46 - 47 的手動方法註解)
+  
 ## 注意事項
 
 - 請確保您的 Twitter API 金鑰和密鑰是正確的。
