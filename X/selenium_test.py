@@ -12,11 +12,11 @@ def get_PIN(url):
 
     user_name_bar = driver.find_element(By.XPATH, '/html/body/div[2]/div/form/fieldset[1]/div[1]/input')
 
-    user_name_bar.send_keys("justin0706yeh@gmail.com")
+    user_name_bar.send_keys("YOUR-X-ACCOUNT")
 
     password_bar = driver.find_element(By.XPATH, '/html/body/div[2]/div/form/fieldset[1]/div[2]/input')
 
-    password_bar.send_keys("justin0706")
+    password_bar.send_keys("YOUR-X-PASSWORD")
 
     password_bar.submit()
 
