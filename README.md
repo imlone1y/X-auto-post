@@ -58,7 +58,7 @@
    須把line 46 - 47 的手動方法註解
 
   ```python
-    # print("Please go here and authorize: %s" % authorization_url)
+    #　print("Please go here and authorize: %s" % authorization_url)
     #　verifier = input("Paste the PIN here: ")
   ```
   
