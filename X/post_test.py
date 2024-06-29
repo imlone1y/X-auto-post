@@ -46,7 +46,7 @@ authorization_url = oauth.authorization_url(base_authorization_url)
 print("Please go here and authorize: %s" % authorization_url)
 verifier = input("Paste the PIN here: ")
 
-# 利用selenium抓取認證碼
+# 自動，利用selenium抓取認證碼
 # from selenium_test import get_PIN
 # verifier = get_PIN(authorization_url)
 
