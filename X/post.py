@@ -18,7 +18,7 @@ text = '幸運數字 - ' + str(random.randint(0,100))
 # 抓取 youtube 前3個發燒影片標題
 # text = youtube_titles()
 
-# 抓取聯合新聞網前三個新聞標題 
+# 抓取聯合新聞網前 3 個新聞標題 
 # text = news_titles()
 
 payload = {"text": str(text)}
