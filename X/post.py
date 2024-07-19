@@ -15,7 +15,7 @@ consumer_secret = 'X-consumer_secret'
 # 生成隨機數字
 text = '幸運數字 - ' + str(random.randint(0,100))
 
-# 抓取 youtube 前20個發燒影片標題
+# 抓取 youtube 前3個發燒影片標題
 # text = youtube_titles()
 
 # 抓取聯合新聞網前三個新聞標題 
