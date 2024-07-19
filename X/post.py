@@ -43,12 +43,12 @@ base_authorization_url = "https://api.twitter.com/oauth/authorize"
 authorization_url = oauth.authorization_url(base_authorization_url)
 
 # 手動輸入
-print("Please go here and authorize: %s" % authorization_url)
-verifier = input("Paste the PIN here: ")
+# print("Please go here and authorize: %s" % authorization_url)
+# verifier = input("Paste the PIN here: ")
 
 # 自動，利用selenium抓取認證碼
-# from selenium_test import get_PIN
-# verifier = get_PIN(authorization_url)
+from selenium_test import get_PIN
+verifier = get_PIN(authorization_url)
 
 # Get the access token
 access_token_url = "https://api.twitter.com/oauth/access_token"
